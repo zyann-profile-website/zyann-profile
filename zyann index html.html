@@ -1,0 +1,564 @@
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- 1. ABOUT ME -->
+  <div class="card">
+    <h1>My Personal Profile</h1>
+
+    <img src="photo/pic (2).jpg" alt="My Photo">
+
+    <h2>About Me</h2>
+    <p>Hello! My name is Zyann Condor. I am a Grade 12 Marigold student.</p>
+    <p>16 years old, living in Magapo #1. I enjoy exploring new things.</p>
+
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Sleeping</li>
+    </ul>
+
+    <h2>Social Media</h2>
+    <a href="https://www.tiktok.com">TikTok</a>
+  </div>
+
+  <!-- 2. VIEW FROM UPSTAIRS -->
+  <div class="card">
+
+    <h2>♡ The View from Upstairs ♡</h2>
+
+    <img src="photo/pic (1).jpg" alt="School View">
+
+    <p><b>My Reflection:</b></p>
+    <p>
+      This photo was taken from the second floor of our school building.
+      My classmates and I went upstairs to find a good spot for our activity.
+    </p>
+
+    <p>
+      I chose this view because I can see cars, buildings, and the sky from above.
+      Everything looks more organized and calm.
+    </p>
+
+    <p>
+      It made me realize that changing perspective can make simple things more interesting.
+    </p>
+
+    <h3>Things Visible in the photo</h3>
+    <ul>
+      <li>Cars</li>
+      <li>Buildings</li>
+      <li>Blue sky</li>
+      <li>Parking area</li>
+    </ul>
+
+    <h3>Events Related to the photo</h3>
+    <ol>
+      <li>Went upstairs</li>
+      <li>Looked for a good angle</li>
+      <li>Chose location</li>
+      <li>Took photo</li>
+      <li>Saved for activity</li>
+    </ol>
+
+  </div>
+
+    <!-- Attribute and Value Summary -->
+    <h3>Attributes Used</h3>
+    <p>
+        <b>&lt;body&gt;</b> → bgcolor = "#f0f8ff" (light pink background)<br>
+        <b>&lt;img&gt;</b> → src = "c:\Users\User\Downloads\15a319b7-d9ac-4b4f-9b5a-ec9c97a81dc4.jfif_photo.jpg" (file location)<br>
+        <b>&lt;img&gt;</b> → alt = "the view from upstairs" (description)<br>
+        <b>&lt;img&gt;</b> → width = "300"
+    </p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NBF Connect - Profile Overview</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ebc8d5;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+    /* Decorative background shapes */
+    .deco-shape {
+      position: absolute;
+      border-radius: 50px;
+      opacity: 0.6;
+      z-index: 0;
+    }
+    .shape-1 {
+      width: 180px;
+      height: 24px;
+      background: #b64453;
+      top: 60px;
+      left: -40px;
+      transform: rotate(35deg);
+    }
+    .shape-2 {
+      width: 160px;
+      height: 20px;
+      background: #eb618b;
+      top: 80px;
+      left: 120px;
+      transform: rotate(35deg);
+    }
+    .shape-3 {
+      width: 200px;
+      height: 26px;
+      background: #cc6767;
+      bottom: 100px;
+      right: -30px;
+      transform: rotate(-35deg);
+    }
+    .shape-4 {
+      width: 150px;
+      height: 18px;
+      background: #e9adc1;
+      bottom: 140px;
+      right: 80px;
+      transform: rotate(-35deg);
+    }
+    .shape-5 {
+      width: 120px;
+      height: 16px;
+      background: #813333;
+      bottom: 60px;
+      right: 200px;
+      transform: rotate(-35deg);
+    }
+    .shape-6 {
+      width: 100px;
+      height: 14px;
+      background: #924552;
+      bottom: 40px;
+      left: 60px;
+      transform: rotate(35deg);
+    }
+    /* Main container */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      position: relative;
+      z-index: 1;
+    }
+    /* Header bar */
+    .header {
+      background: #1a1a1a;
+      color: #8d1734;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      border-radius: 8px 8px 0 0;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .logo span {
+      font-weight: 400;
+      color: #dbafb2;
+    }
+    .logo small {
+      display: block;
+      font-size: 9px;
+      font-weight: 400;
+      color: #aaa;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .divider {
+      color: #f58d9f;
+    }
+    .page-title {
+      font-size: 14px;
+      color: #d16edf;
+      font-weight: 500;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .user-info-header {
+      text-align: right;
+    }
+    .user-info-header .name {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .user-info-header .last-login {
+      font-size: 10px;
+      color: #cd62ff;
+    }
+    .avatar-small {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #d261e0;
+      overflow: hidden;
+      border: 2px solid #c568d1;
+    }
+    .avatar-small img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .icon-btn {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .icon-btn:hover {
+      background: rgba(234, 142, 247, 0.1);
+    }
+    /* Hero banner */
+    .hero-banner {
+      width: 100%;
+      height: 180px;
+      background: linear-gradient(135deg, #9a55a3 0%, #6a8a8a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.85;
+    }
+    /* Profile card */
+    .profile-card {
+      background: #f5f5f5;
+      padding: 0 40px 40px;
+      position: relative;
+      border-radius: 0 0 8px 8px;
+    }
+    .profile-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 16px;
+      position: relative;
+    }
+    .avatar-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: -50px;
+      position: relative;
+    }
+    .avatar-large {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #ddd;
+      overflow: hidden;
+      border: 4px solid #f5f5f5;
+      box-shadow: 0 2px 8px rgba(207, 127, 197, 0.1);
+      position: relative;
+    }
+    .avatar-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .edit-icon {
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      width: 22px;
+      height: 22px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #555;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+      cursor: pointer;
+    }
+    .profile-info {
+      padding-top: 16px;
+    }
+    .profile-name {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 4px;
+    }
+    .profile-stats {
+      font-size: 12px;
+      color: #544355;
+    }
+    .profile-stats span {
+      color: #f8afe8;
+      cursor: pointer;
+    }
+    .save-btn {
+      padding: 8px 20px;
+      border: 1px solid #0a0a0a;
+      color: #ab54ce;
+      background: transparent;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 10px;
+    }
+    .save-btn:hover {
+      background: #da93f0;
+      color: #fff;
+    }
+    /* Form section */
+    .form-section {
+      margin-top: 30px;
+    }
+    .section-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #888;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+    .form-row {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      flex: 1;
+    }
+    .form-group label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: #888;
+      margin-bottom: 6px;
+      text-transform: capitalize;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #555;
+      background: #fff;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus {
+      border-color: #b08ed8;
+    }
+    .form-group input::placeholder {
+      color: #bbb;
+    }
+    /* Feedback button */
+    .feedback-btn {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(-90deg);
+      transform-origin: right center;
+      background: #d2a1ff;
+      color: #fff;
+      padding: 8px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px 4px 0 0;
+      z-index: 100;
+      letter-spacing: 0.5px;
+    }
+    .feedback-btn:hover {
+      background: #b67fe2;
+    }
+    /* Responsive */
+    @media (max-width: 640px) {
+      .container {
+        margin: 20px;
+      }
+      .form-row {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .avatar-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -40px;
+      }
+      .profile-info {
+        padding-top: 8px;
+      }
+      .save-btn {
+        margin-top: 16px;
+      }
+      .header {
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .header-right {
+        gap: 10px;
+      }
+      .user-info-header {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Decorative background shapes -->
+  <div class="deco-shape shape-1"></div>
+  <div class="deco-shape shape-2"></div>
+  <div class="deco-shape shape-3"></div>
+  <div class="deco-shape shape-4"></div>
+  <div class="deco-shape shape-5"></div>
+  <div class="deco-shape shape-6"></div>
+
+  <!-- Feedback button -->
+  <button class="feedback-btn">Feedback</button>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-left">
+        <div class="logo">
+          NBF <span>CONNECT</span>
+          <small>Connecting Minds</small>
+        </div>
+        <span class="divider">|</span>
+        <span class="page-title">PROFILE</span>
+      </div>
+      <div class="header-right">
+        <div class="user-info-header">
+          <div class="name">Zyann condor</div>
+          <div class="last-login">New Login: June 22, 2026</div>
+        </div>
+        <div class="avatar-small">
+          <img src="photo/pic (4).jpg" alt="Zyann Condor" />
+        </div>
+        <div class="icon-btn">☰</div>
+        <div class="icon-btn">G</div>
+      </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <img src="photo/pic (3).jpg" alt="Banner" />
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="avatar-section">
+          <div class="avatar-large">
+            <img src="photo/pic (4).jpg" alt="Zyann Condor" />
+            <div class="edit-icon">✎</div>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Zyann Condor</div>
+            <div class="profile-stats">
+              <span>200 followers</span> . <span>6 following</span>
+            </div>
+          </div>
+        </div>
+        <button class="save-btn">Save changes</button>
+      </div>
+
+      <!-- Form -->
+      <div class="form-section">
+        <div class="section-title">Personal details</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First name</label>
+            <input type="text" value="Zyann" />
+          </div>
+          <div class="form-group">
+            <label>Last name</label>
+            <input type="text" value="Condor" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Mobile number</label>
+            <input type="text" value="09263222737" />
+          </div>
+          <div class="form-group">
+            <label>Email ID</label>
+            <input type="text" value="condorzyann@gmail.com" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label> GENDER</label>
+            <input type="text" value="Female" />
+          </div>
+          <div class="form-group"></div>
+        </div>
+        
+        <!-- My Interest -->
+<div class="form-section">
+  <div class="section-title">My Interest</div>
+
+  <ul>
+    <li>Exploring new things</li>
+    <li>Listening to music</li>
+    <li>Watching gl series</li>
+    <li>Learning new skills</li>
+  </ul>
+</div>
+
+
+<!-- My Video -->
+<div class="form-section">
+  <div class="section-title">My Video</div>
+
+  <video width="400" controls>
+    <source src="video/video.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
+
+</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
